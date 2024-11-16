@@ -1,0 +1,42 @@
+.design{
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.design img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+    object-fit: contain;
+    margin: 10px;
+}
+.design{
+    flex-basis: 31%;
+}
+.design img:hover{
+    transform: scale(1.05);
+}
+
+/* =========Media Query========= */
+
+@media (max-width: 650px) {
+    .design{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .design img{
+        width: 100%;
+        height: auto;
+        margin: 10px;
+        flex-basis: 100%;
+    }
+    .design:nth-child(even){
+        margin-bottom: 10px;
+        flex-basis: 100%;
+        order: 2;
+        flex-direction: column-reverse;
+    }
+}
